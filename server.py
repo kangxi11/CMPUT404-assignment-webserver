@@ -34,7 +34,7 @@ class MyWebServer(socketserver.BaseRequestHandler):
             content = '''
                 <html>
                     <body>
-                        <h2></h2><h1>405 Not Allowed</h1>
+                        <h2></h2><h1>405 Method Not Allowed</h1>
                     </body>
                 </html>'''
             msg = 'HTTP/1.1 405 Method Not Allowed\r\nContent-Type: text/html\r\nContent-Length: {}\r\n\r\n'.format(len(content)) + content
